@@ -1,0 +1,23 @@
+
+resources:
+  output: /storage/cozzip/Projects/danara/hapflk/results
+
+samples:
+  test1: /storage/cozzip/Projects/test_pipengine/test.yml
+  test2: /storage/cozzip/Projects/test_pipengine/test.yml
+  test3: /storage/cozzip/Projects/test_pipengine/test.yml
+
+  1A: /storage/cozzip/Projects/danara/hapflk/
+  2A: /storage/cozzip/Projects/danara/hapflk/
+  3A: /storage/cozzip/Projects/danara/hapflk/
+  4A: /storage/cozzip/Projects/danara/hapflk/
+  5A: /storage/cozzip/Projects/danara/hapflk/
+  6A: /storage/cozzip/Projects/danara/hapflk/
+  7A: /storage/cozzip/Projects/danara/hapflk/
+  1B: /storage/cozzip/Projects/danara/hapflk/
+  2B: /storage/cozzip/Projects/danara/hapflk/
+  3B: /storage/cozzip/Projects/danara/hapflk/
+  4B: /storage/cozzip/Projects/danara/hapflk/
+  5B: /storage/cozzip/Projects/danara/hapflk/
+  6B: /storage/cozzip/Projects/danara/hapflk/
+  7B: /storage/cozzip/Projects/danara/hapflk/
