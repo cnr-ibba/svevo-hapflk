@@ -9,10 +9,47 @@ steps:
   DEW-DWL:
     run:
       - source activate <conda_env>
-      - hapflk --bfile <base_dir/>hapflk_dew_dwl/dew_dwl --kinship <base_dir/>hapflk_dew_dwl/dew_dwl_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p DEW-DWL.<sample>
+      - hapflk --bfile <base_dir>/hapflk_dew_dwl/dew_dwl --kinship <base_dir>/hapflk_dew_dwl/dew_dwl_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p DEW-DWL.<sample>
     cpu: 64
 
   DWL-DWC:
     run:
       - source activate <conda_env>
-      - hapflk --bfile <base_dir/>hapflk_dwl_dwc/dwl_dwc --kinship <base_dir/>hapflk_dwl_dwc/dwl_dwc_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p DWL-DWC.<sample>
+      - hapflk --bfile <base_dir>/hapflk_dwl_dwc/dwl_dwc --kinship <base_dir>/hapflk_dwl_dwc/dwl_dwc_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p DWL-DWC.<sample>
+    cpu: 64
+
+  WEW-DEW:
+    run:
+      - source activate <conda_env>
+      - hapflk --bfile <base_dir>/hapflk_wew_dew/wew_dew --kinship <base_dir>/hapflk_wew_dew/wew_dew_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p WEW-DEW.<sample>
+    cpu: 64
+
+  sub_DEW-DWL:
+    run:
+      - source activate <conda_env>
+      - hapflk --bfile <base_dir>/hapflk_dew_dwl/sub_pop/dew_dwl_sub_pop --kinship <base_dir>/hapflk_dew_dwl/sub_pop/dew_dwl_sub_pop_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p sub_DEW-DWL.<sample>
+    cpu: 64
+
+  sub_DWL-DWC:
+    run:
+      - source activate <conda_env>
+      - hapflk --bfile <base_dir>/hapflk_dwl_dwc/sub_pop/dwl_dwc_sub_pop --kinship <base_dir>/hapflk_dwl_dwc/sub_pop/dwl_dwc_sub_pop_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p sub_DWL-DWC.<sample>
+    cpu: 64
+
+  sub_WEW-DEW:
+    run:
+      - source activate <conda_env>
+      - hapflk --bfile <base_dir>/hapflk_wew_dew/sub_pop/wew_dew_sub_pop --kinship <base_dir>/hapflk_wew_dew/sub_pop/wew_dew_sub_pop_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p sub_WEW-DEW.<sample>
+    cpu: 64
+
+  DEW_sub_pop:
+    run:
+      - source activate <conda_env>
+      - hapflk --bfile <base_dir>/DEW_and_DWL/dew_sub_pop --kinship <base_dir>/DEW_and_DWL/dew_sub_pop_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p DEW_sub_pop.<sample>
+    cpu: 64
+
+  DWL_sub_pop:
+    run:
+      - source activate <conda_env>
+      - hapflk --bfile <base_dir>/DEW_and_DWL/dwl_sub_pop --kinship <base_dir>/DEW_and_DWL/dwl_sub_pop_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p DWL_sub_pop.<sample>
+    cpu: 64
