@@ -1,6 +1,7 @@
 
 resources:
   output: /storage/cozzip/Projects/danara/hapflk/results
+  base_dir: /storage/cozzip/Projects/danara/hapflk/
 
 samples:
   test1: /storage/cozzip/Projects/test_pipengine/test.yml
