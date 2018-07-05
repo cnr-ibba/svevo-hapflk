@@ -10,3 +10,4 @@ steps:
     run:
       - source activate <conda_env>
       - hapflk --bfile /storage/cozzip/Projects/danara/hapflk_dew_dwl/dew_dwl --kinship /storage/cozzip/Projects/danara/hapflk_dew_dwl/dew_dwl_fij.txt -K 10 --ncpu=<cpu> --annot --nfit=50 --chr <sample> -p <sample>
+    cpu: 64
