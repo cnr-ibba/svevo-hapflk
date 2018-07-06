@@ -4,10 +4,6 @@ resources:
   base_dir: /storage/cozzip/Projects/danara/hapflk
 
 samples:
-  test1: /storage/cozzip/Projects/test_pipengine/test.yml
-  test2: /storage/cozzip/Projects/test_pipengine/test.yml
-  test3: /storage/cozzip/Projects/test_pipengine/test.yml
-
   1A: /storage/cozzip/Projects/danara/hapflk/
   2A: /storage/cozzip/Projects/danara/hapflk/
   3A: /storage/cozzip/Projects/danara/hapflk/
